@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Network Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Notification Permission (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Allow app to request package installation (for update feature) -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- Storage for Android 9 and below only -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- ✅ NEW: Location for attendance boundary check -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OneTap"
+        tools:targetApi="34">
+
+        <!-- FileProvider for APK install (update feature) -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Splash / Launcher -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.OneTap.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All Activities -->
+        <activity
+            android:name=".activities.MainLandingActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.SignupActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.StudentDashboardActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.TeacherDashboardActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.AdminDashboardActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.MarkAttendanceActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.CreateSessionActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.ActiveSessionsActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.SessionHistoryActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.ViewAttendanceActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.PendingApprovalActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.ApprovedTeachersActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.AllStudentsActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <activity
+            android:name=".activities.SubjectAttendanceActivity"
+            android:theme="@style/Theme.OneTap" />
+
+        <!-- Session Attendance Detail Activity -->
+        <activity
+            android:name=".activities.SessionAttendanceDetailActivity"
+            android:theme="@style/Theme.OneTap" />
+
+    </application>
+
+</manifest>

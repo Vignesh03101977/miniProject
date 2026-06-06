@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneTap</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Attendance Made Simple</string>
+
+    <!-- Landing -->
+    <string name="landing_title">Welcome to OneTap</string>
+    <string name="landing_subtitle">Smart attendance tracking for modern classrooms</string>
+    <string name="btn_login">Log In</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="btn_admin_login">Admin Login</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome Back!</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="sign_up_link">Sign Up</string>
+
+    <!-- Signup -->
+    <string name="signup_title">Create Account</string>
+    <string name="signup_subtitle">Join OneTap today</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_student_id">Student / Employee ID</string>
+    <string name="hint_department">Department</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="select_role">Select Role</string>
+    <string name="role_student">Student</string>
+    <string name="role_teacher">Teacher</string>
+    <string name="already_account">Already have an account? </string>
+    <string name="log_in_link">Log In</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="teacher_pending_msg">Your account is pending admin approval. You\'ll be notified once approved.</string>
+
+    <!-- Student Dashboard -->
+    <string name="student_dashboard_title">Student Dashboard</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="my_attendance">My Attendance</string>
+    <string name="attendance_history">Attendance History</string>
+
+    <!-- Teacher Dashboard -->
+    <string name="teacher_dashboard_title">Teacher Dashboard</string>
+    <string name="create_session">Create Session</string>
+    <string name="active_sessions">Active Sessions</string>
+    <string name="session_history">Session History</string>
+    <string name="view_attendance">View Attendance</string>
+
+    <!-- Admin Dashboard -->
+    <string name="admin_dashboard_title">Admin Dashboard</string>
+    <string name="pending_approvals">Pending Approvals</string>
+    <string name="approved_teachers">Approved Teachers</string>
+    <string name="all_students">All Students</string>
+    <string name="total_sessions">Total Sessions</string>
+
+    <!-- Create Session -->
+    <string name="create_session_title">Create New Session</string>
+    <string name="hint_session_title">Session Title</string>
+    <string name="hint_subject_name">Subject Name</string>
+    <string name="hint_session_duration">Duration (minutes)</string>
+    <string name="btn_generate_code">Generate Session Code</string>
+    <string name="btn_start_session">Start Session</string>
+    <string name="session_code_label">Session Code</string>
+    <string name="share_code_msg">Share this code with your students</string>
+
+    <!-- Mark Attendance -->
+    <string name="mark_attendance_title">Mark Attendance</string>
+    <string name="hint_session_code">Enter Session Code</string>
+    <string name="btn_submit_attendance">Submit Attendance</string>
+    <string name="attendance_marked_success">Attendance marked successfully!</string>
+
+    <!-- Common -->
+    <string name="btn_logout">Logout</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_empty_fields">Please fill in all fields</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="success">Success</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="delete">Delete</string>
+    <string name="no_data">No data available</string>
+    <string name="confirm_logout">Are you sure you want to logout?</string>
+    <!-- Add these to your existing strings.xml -->
+    <string name="airplane_mode_required">Airplane Mode Required</string>
+    <string name="turn_on_airplane_mode">Turn ON Airplane Mode</string>
+    <string name="device_offline_ready">Device is offline - Ready to submit!</string>
+    <string name="network_still_active">Network Still Active</string>
+    <string name="disconnect_all_networks">Please disconnect WiFi/Mobile Data completely</string>
+</resources>
